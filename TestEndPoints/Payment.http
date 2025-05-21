@@ -1,0 +1,27 @@
+GET http://localhost:5155/Payment
+
+###
+GET http://localhost:5155/Payment/5
+
+###
+POST  http://localhost:5155/Payment
+Content-Type: application/json
+
+{
+  "PaymentStatusID": 2,
+  "PaymentMehtodID": 3,
+  "SubscriberID": 4,
+  "PaymentDate": "2025-05-04T10:30:00Z",
+  "TotlaFees": 99.99,
+  "PaymentDetails": "Paid via credit card"
+}
+
+###
+PUT http://localhost:5155/Payment/1
+Content-Type: application/json
+
+{
+    "PaymentStatusID": 2,
+    "TotlaFees":2000.2,
+    "PaymentDetails":"This is Updated payment done when testing api"
+}

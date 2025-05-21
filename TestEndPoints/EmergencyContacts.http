@@ -1,0 +1,27 @@
+GET http://localhost:5155/EmergencyContacts
+
+
+
+###
+GET http://localhost:5155/EmergencyContacts/6
+
+
+ 
+###
+POST http://localhost:5155/EmergencyContacts
+Content-Type: application/json
+
+ {
+    "Name": "David Lee",
+    "PhoneNumber": "+10928374655",
+    "Relationship": "Spouse"
+  }
+###
+PUT http://localhost:5155/EmergencyContacts/1
+Content-Type: application/json
+
+{
+  "name": "Ghayath ",
+  "phoneNumber": "+96312345678901",
+  "relationship": "Father"
+}

@@ -1,0 +1,34 @@
+GET http://localhost:5155/Trainers
+
+###
+GET http://localhost:5155/Trainers/2
+
+
+###
+POST http://localhost:5155/Trainers
+Content-Type: application/json
+
+ {
+    "Name": "Carlos Diaz",
+    "Spacialty": "Cardio & Endurance",
+    "PhoneNumber": "+1122334455",
+    "Email": "carlos.diaz@example.com",
+    "availability": "Mon, Wed, Fri 6pm-9pm",
+    "Price": 45.5
+  }
+
+###
+PUT http://localhost:5155/Trainers/2
+Content-Type: application/json
+
+{
+    "Name": "Ghayath Alali",
+    "Spacialty": "Cardio & Endurance & bodybuilding",
+    "PhoneNumber": "+11000000000",
+    "Email": "Ghayath.diaz@example.com",
+    "availability": "Mon, Wed, Fri 6pm-9pm",
+    "Price": 85.5
+  }
+
+###
+DELETE  http://localhost:5155/Trainers/1

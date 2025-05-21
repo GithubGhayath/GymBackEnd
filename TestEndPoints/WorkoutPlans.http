@@ -1,0 +1,29 @@
+GET http://localhost:5155/WorkoutPlan
+
+###
+GET http://localhost:5155/WorkoutPlan/3
+
+###
+POST  http://localhost:5155/WorkoutPlan
+Content-Type: application/json
+
+{
+  "planName": "Beginner Plan",
+  "duration": 30,
+  "price": 19.99,
+  "statusID": 1,
+  "SubscriberID": 4
+}
+###
+PUT   http://localhost:5155/WorkoutPlan/2
+Content-Type: application/json
+
+{
+  "planName": "Updated Plan",
+  "duration": 66,
+  "price": 66.99,
+  "statusID": 2
+}
+
+###
+DELETE http://localhost:5155/WorkoutPlan/1

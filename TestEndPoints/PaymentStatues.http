@@ -1,0 +1,26 @@
+GET http://localhost:5155/PaymentStatus
+
+###
+GET http://localhost:5155/PaymentStatus/6
+
+###
+POST http://localhost:5155/PaymentStatus
+Content-Type: application/json
+
+{
+    "StatusName":"New status"
+}
+
+
+
+###
+PUT http://localhost:5155/PaymentStatus/6
+Content-Type: application/json
+
+{
+    "StatusName":"Updated status"
+}
+
+
+###
+DELETE http://localhost:5155/PaymentStatus/6

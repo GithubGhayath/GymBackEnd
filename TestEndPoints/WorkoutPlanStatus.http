@@ -1,0 +1,28 @@
+GET http://localhost:5155/WorkoutPlanStatus
+
+###
+GET http://localhost:5155/WorkoutPlanStatus/6
+
+
+
+###
+POST  http://localhost:5155/WorkoutPlanStatus
+Content-Type: application/json
+
+{
+  "status": "NewStatus"
+}
+
+
+
+###
+PUT  http://localhost:5155/WorkoutPlanStatus/6
+Content-Type: application/json
+
+{
+  "status": "UpdatedStatus"
+}
+
+
+###
+DELETE   http://localhost:5155/WorkoutPlanStatus/6

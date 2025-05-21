@@ -1,0 +1,29 @@
+GET http://localhost:5155/MembershipTypes
+
+###
+GET http://localhost:5155/MembershipTypes/7
+
+
+###
+POST http://localhost:5155/MembershipTypes
+Content-Type: application/json
+
+
+{
+  "type": "New Type",
+  "price": 125.3,
+  "description": "This is New type just for test"
+}
+###
+PUT http://localhost:5155/MembershipTypes/7
+Content-Type: application/json
+
+
+{
+  "type": "Updated type",
+  "price": 125.3,
+  "description": "This is for update test"
+}
+###
+DELETE  http://localhost:5155/MembershipTypes/7
+

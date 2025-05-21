@@ -1,0 +1,26 @@
+GET http://localhost:5155/Attendance
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImdoYXlhIiwic3ViIjoiZ2hheWEiLCJqdGkiOiJkYmQ3ZDBjYyIsImF1ZCI6WyJodHRwOi8vbG9jYWxob3N0OjI1MjI5IiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTQiLCJodHRwOi8vbG9jYWxob3N0OjUxNTUiLCJodHRwczovL2xvY2FsaG9zdDo3MTk0Il0sIm5iZiI6MTc0Nzc2NjYwNywiZXhwIjoxNzU1NzE1NDA3LCJpYXQiOjE3NDc3NjY2MTAsImlzcyI6ImRvdG5ldC11c2VyLWp3dHMifQ.tux6wg9AN6cgNeaLJpT82tmZA9fIgUDnhuGnE7Bw-B8
+
+###
+
+GET http://localhost:5155/Attendance/9
+
+
+###
+
+POST http://localhost:5155/Attendance
+Content-Type:  application/json
+
+ {
+    "SubscriberID": 2,
+    "CheckInTime": "2025-04-28T08:15:00"
+}
+
+###
+
+PUT http://localhost:5155/Attendance/10
+Content-Type:  application/json
+
+{
+    "CheckoutTime": "2025-04-28T10:15:00"
+}
